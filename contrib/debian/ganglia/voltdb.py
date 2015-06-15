@@ -8,7 +8,7 @@ from configobj import ConfigObj
 import sys
 
 #db api available in home_dir
-conf_file = "/etc/svc.conf"
+conf_file = "/etc/hermes.conf"
 config=ConfigObj(conf_file)
 sys.path.append(config['home_dir'])
 ALIVE_TIME=int(config['alive_time'])
